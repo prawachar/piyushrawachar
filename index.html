@@ -757,152 +757,124 @@
 
     // Case Studies Data
     const caseStudies = [
-      {
-        id: 'ebdc-salesforce',
-        title: 'Vacant Rental Intake Program (VRIP) Redesign',
-        client: 'East Buffalo Development Corporation',
-        problem: 'EBDC relied on fragmented systems—Google Forms, spreadsheets, and shared drives—to manage rental property applications. As program volume increased, the team lost visibility into application status, struggled to enforce consistent evaluation criteria, and faced delays in tracking requirements and scoring decisions.',
-        approach: 'Led discovery sessions with program leadership to map the end-to-end applicant journey and identify critical decision points. Designed a unified Salesforce solution supporting multi-property submissions, automated eligibility validation, and construction-phase documentation tracking.',
-        outcome: 'Delivered a structured evaluation workflow that reduced manual coordination, provided real-time visibility into pipeline bottlenecks, and established a scalable platform for future automation and executive reporting.',
-        fullContent: {
-          background: 'The East Buffalo Development Corporation (EBDC) is a nonprofit serving Buffalo\'s East Side that manages New York State\'s Vacant Rental Intake Program (VRIP). The program revitalizes vacant rental properties to strengthen neighborhood stability. Prior to this engagement, EBDC managed applications through disconnected tools—Google Forms, spreadsheets, emails, and shared drives—creating bottlenecks and data inconsistencies as program volume grew.',
-          challenge: 'The organization faced several critical challenges: rental property applications were processed through fragmented systems, leading to lost documentation and status tracking gaps; there was no centralized system to manage multi-property submissions or enforce eligibility rules; scoring decisions lacked consistency and transparency; leadership had limited visibility into pipeline metrics and bottlenecks; and the intake team spent excessive time on manual coordination rather than applicant support and construction-phase oversight.',
-          approachSteps: [
-            'Facilitated discovery workshops with program leadership, intake coordinators, and construction oversight staff',
-            'Mapped the complete applicant journey from initial inquiry through construction completion',
-            'Identified critical decision points, eligibility requirements, and documentation checkpoints',
-            'Designed Salesforce data model supporting multi-property submissions and construction-phase tracking',
-            'Introduced two-path intake model: formal applications vs. post-deadline prescreening requests',
-            'Built automated eligibility validation rules and structured scoring workflows',
-            'Created custom Lightning pages for application review and construction documentation',
-            'Developed executive dashboards showing pipeline status, evaluation bottlenecks, and award metrics',
-            'Conducted user acceptance testing and delivered training for program staff'
-          ],
-          solution: 'Implemented a unified Salesforce solution featuring a dual-path intake system for formal applications and prescreening requests, automated eligibility validation based on program rules, multi-property submission support with linked property records, structured evaluation workflows with consistent scoring criteria, construction-phase documentation tracking, automated status notifications for applicants, and executive dashboards providing real-time visibility into pipeline bottlenecks and award decisions.',
-          impacts: [
-            { value: '40%', label: 'Reduction in Processing Time' },
-            { value: '100%', label: 'Application Tracking Accuracy' },
-            { value: '25hrs', label: 'Weekly Time Saved' },
-            { value: '2x', label: 'Faster Award Decisions' }
-          ]
-        }
-      },
-      {
-        id: 'market-analysis',
-        title: 'Location Viability & Market Analysis',
-        client: 'Local Business Startup (UB FAST Clinic)',
-        problem: 'A local entrepreneur planning to launch a retail business needed to validate whether their selected street location would support sustainable growth. Without data on customer behavior, foot traffic patterns, and competitive dynamics, the business faced significant launch risk.',
-        approach: 'Conducted comprehensive market segmentation and competitive analysis, including primary survey research, demographic profiling, foot-traffic mapping, and competitive saturation assessment to evaluate location viability.',
-        outcome: 'Delivered a data-driven feasibility report with clear recommendations on target customer segments, optimal operating hours, and location-specific growth opportunities, enabling the client to make an informed launch decision.',
-        fullContent: {
-          background: 'Through the University at Buffalo FAST Projects Clinic, our team partnered with a local business owner preparing to launch a retail operation in Buffalo. The client had identified a potential street location but lacked objective data to assess whether the area would generate sufficient customer demand and support long-term profitability. The decision required understanding neighborhood demographics, customer preferences, traffic patterns, and competitive landscape.',
-          challenge: 'The client faced several critical uncertainties: customer demographics and purchasing behaviors in the area were unknown; competitive saturation and market gaps were not clearly understood; there was no data on customer preferences or demand for the proposed business type; the overall business viability of the location remained unvalidated, creating significant financial risk for the launch; and without market insights, the client couldn\'t determine optimal product offerings or pricing strategy.',
-          approachSteps: [
-            'Designed and deployed customer surveys to capture demographic profiles and purchasing preferences',
-            'Analyzed census and demographic data to identify resident income levels, age distribution, and household characteristics',
-            'Assessed competitive saturation by cataloging similar businesses within the target area',
-            'Evaluated accessibility factors including parking availability, public transit access, and pedestrian infrastructure',
-            'Analyzed survey responses to identify customer preferences and potential demand patterns',
-            'Synthesized findings into customer segment profiles with purchase likelihood estimates',
-            'Developed recommendations for target customer segments based on survey insights',
-            'Created actionable recommendations for business positioning and launch strategy'
-          ],
-          solution: 'Delivered a comprehensive market analysis report featuring detailed demographic and psychographic customer segmentation based on survey insights, competitive landscape assessment identifying market gaps and saturation risks, recommended target customer segments with demand indicators, customer preference analysis informing product and service offerings, and location-specific growth opportunities with actionable launch strategies. The report provided the client with a clear, data-backed framework for their go/no-go decision and launch planning.',
-          impacts: [
-            { value: '60+', label: 'Survey Responses Collected' },
-            { value: '15+', label: 'Competitor Locations Analyzed' },
-            { value: '3', label: 'Target Segments Identified' },
-            { value: '100%', label: 'Data-Driven Decision Framework' }
-          ]
-        }
-      },
-      {
-        id: 'acute-care-feasibility',
-        title: 'Acute Care Feasibility & Needs Assessment',
-        client: 'Major Hospital System (UB FAST Clinic)',
-        problem: 'A senior physician at a major Buffalo-area hospital sought to evaluate whether an acute care model could address urgent treatment gaps across Buffalo. Without data on community demand, access barriers, and infrastructure requirements, the hospital lacked a clear foundation for investment decisions.',
-        approach: 'Conducted feasibility and needs assessment analyzing Buffalo demographics, healthcare access patterns, and care delivery gaps to determine acute care viability and optimal service design.',
-        outcome: 'Delivered a structured recommendation report identifying high-value service scenarios, integration options with existing hospital infrastructure, and key risks—enabling informed strategic planning for acute care expansion.',
-        fullContent: {
-          background: 'Through the University at Buffalo FAST Projects Clinic, our team partnered with a senior physician from a major hospital system serving the Buffalo region. The client wanted to explore whether introducing an acute care model in Buffalo would address unmet community needs. Acute care—short-term, urgent treatment for serious illness or injury—is typically delivered in emergency departments, urgent care centers, or short-stay hospital units. The core question was whether Buffalo had sufficient demand, access gaps, and supporting infrastructure to justify this service, and what form it should take.',
-          challenge: 'The hospital faced several strategic uncertainties: the scope and scale of unmet acute care demand in Buffalo were unknown; existing care delivery touchpoints and patient journeys for urgent conditions were not mapped; barriers preventing timely access to appropriate care—such as transportation, wait times, and cost—remained unquantified; potential overlap or conflict with existing emergency departments and urgent care centers needed clarification; and the hospital lacked a data-driven framework to evaluate investment risk and service design options.',
-          approachSteps: [
-            'Reviewed acute care delivery best practices and differentiated acute care from primary and chronic care models',
-            'Analyzed public health data for Buffalo: demographics, income levels, chronic disease prevalence, and insurance coverage',
-            'Mapped existing healthcare infrastructure including hospital EDs, urgent care centers, primary care clinics, and community health centers',
-            'Documented current patient journey for urgent care needs, identifying typical touchpoints and access barriers',
-            'Conducted qualitative stakeholder conversations with clinicians and community organizations to understand perceived care gaps',
-            'Identified scenarios where acute care could reduce avoidable ED utilization and improve timely treatment',
-            'Evaluated service design considerations: hours of operation, potential locations, staffing models, and hospital integration points',
-            'Assessed key risks, data limitations, and requirements for a full feasibility study'
-          ],
-          solution: 'Delivered a concise feasibility recommendation report providing hospital leadership with a structured, data-informed view of the acute care opportunity. The report included: geographic and demographic analysis highlighting underserved populations and high ED utilization patterns; patient journey mapping showing where acute care could intercept avoidable emergency visits; service design options for hours, locations, and integration with existing hospital operations; high-value use cases where acute care would deliver better outcomes than primary care or ED visits; and a risk and data gap assessment outlining next steps for detailed planning and community engagement.',
-          impacts: [
-            { value: '5+', label: 'Healthcare Touchpoints Mapped' },
-            { value: '3', label: 'Service Design Options Proposed' },
-            { value: '100%', label: 'Data-Driven Decision Framework' },
-            { value: 'Strategic', label: 'Foundation for Investment Planning' }
-          ]
-        }
-      },
-      {
-        id: 'accenture-gcc',
-        title: 'Incident Management & Operational Automation',
-        client: 'Accenture',
-        problem: 'Cross-client oversight function managing thousands of daily alerts with inconsistent categorization, reactive SLA management, and limited visibility across regional teams and client environments.',
-        approach: 'Standardized cross-client incident taxonomy, built automated triage and escalation logic, implemented proactive SLA monitoring, and created unified command dashboards for leadership visibility.',
-        outcome: 'Reduced manual triage by 60%, improved SLA compliance to 92%, accelerated recurring incident resolution by 35%, and increased analyst efficiency by 45% during peak hours.',
-        fullContent: {
-          background: 'Accenture\'s Global Command Center operates as a 24×7 oversight and escalation function supporting more than 200 enterprise clients worldwide. While each major client maintains its own incident response teams, the Command Center acts as the coordination layer that monitors cross-regional operations, identifies disruptions early, drives escalation workflows, and ensures that leadership receives accurate and timely updates during high-impact incidents.',
-          challenge: 'The GCC team managed thousands of alerts each day across heterogeneous client environments, which led to several operational pain points: incoming incidents from client-specific L1/L2 teams were often miscategorized, causing delays in engaging the correct resolver groups; manual triage and correlation consumed analyst time during peak traffic; SLA risks were identified late, creating reactive firefighting rather than proactive prevention; leadership lacked unified visibility across client environments, making it difficult to spot patterns or systemic issues early; and communication during priority incidents was inconsistent across regions and vendor teams. The Command Center needed a more standardized, automated, and data-driven way to handle incident intake, triage, escalations, and reporting.',
-          approachSteps: [
-            'Analyzed 6 months of incident trends across multiple clients to identify categorization patterns and high-frequency failure points',
-            'Facilitated workshops with L1/L2 client teams, cloud vendors (AWS, Microsoft), and internal engineering teams to understand routing logic and escalation triggers',
-            'Standardized a cross-client incident taxonomy aligned with ITIL, improving consistency in triage and reporting',
-            'Designed an automation engine using keyword patterns and historical categorization accuracy to suggest the correct category and priority',
-            'Created intelligent routing rules that factored in priority, business impact, and resolver team availability',
-            'Implemented proactive SLA monitoring with automated alerts to prevent breaches',
-            'Developed dashboards that gave leadership real-time visibility into queue health, backlog growth, MTTR, and regional performance'
-          ],
-          solution: 'The enhanced incident management framework introduced automated categorization and routing suggestions to reduce manual work, proactive SLA breach predictors and auto-escalation logic, unified communication workflows for cross-regional incident updates, real-time command dashboards consolidating multi-client operational health, and standardized incident taxonomy enabling consistent reporting and RCA documentation. This allowed the GCC to operate as a strategic command layer rather than just an alert-processing team.',
-          impacts: [
-            { value: '35%', label: 'Faster Resolution for Recurring Issues' },
-            { value: '60%', label: 'Less Manual Triage' },
-            { value: '92%', label: 'SLA Compliance Rate' },
-            { value: '45%', label: 'Improved Analyst Efficiency' }
-          ]
-        }
-      },
-      {
-        id: 'global-handover',
-        title: 'Global Shift Handover Standardization',
-        client: 'Fortune 500 Enterprise (via Accenture GCC)',
-        problem: 'Regional incident response teams in APAC, EMEA, and North America handled their own ticket queues with inconsistent shift handover practices, leading to lost context, unclear ownership, and transition-related delays during major incidents.',
-        approach: 'Mapped current-state handover behaviors across regions, identified information loss points, and co-designed a structured, time-bound global handover framework with regional leads and analysts.',
-        outcome: 'Introduced a standardized handover lifecycle that made ownership explicit, reduced communication gaps at region boundaries, and strengthened 24×7 operational continuity for a mission-critical client.',
-        fullContent: {
-          background: 'As part of Accenture’s Global Command Center, I supported a major enterprise client in an industry where 24×7 operational continuity was essential. The client operated incident response teams across APAC, EMEA, and North America, each managing its own Service Desk queues and regional workflows. The Global Command Center provided cross-region oversight, but shift transitions between time zones remained a critical failure point for ongoing incidents.',
-          challenge: 'Despite strong technical capabilities in each region, the client lacked a standardized, repeatable shift handover process. Analysts documented handovers differently, relied heavily on ad-hoc chat updates, and followed local practices that were not visible globally. Critical context was often missed when a region signed off: P1/P2 incidents lost clear ownership, vendor escalations stalled overnight, and queue health snapshots were inconsistent. This created transition-related delays, duplicated work across regions, and increased operational risk for a client that depended on continuous availability.',
-          approachSteps: [
-            'Observed live shift transitions across APAC, EMEA, and North America to document how handovers actually occurred in practice',
-            'Conducted structured interviews with analysts and team leads to understand pain points, workarounds, and examples of failed handovers',
-            'Reviewed existing runbooks, chat transcripts, and ticket notes to identify where and how critical information was being lost',
-            'Defined a target-state handover lifecycle that clarified roles, timing, and required inputs for both outgoing and incoming regional teams',
-            'Designed a standardized, time-bound handover template covering open P1/P2 incidents, vendor escalations, known risks, and queue health by category',
-            'Embedded the new template in existing collaboration and ticketing tools to minimize friction and encourage consistent usage',
-            'Partnered with APAC, EMEA, and NA team leads to pilot the framework, collect feedback, and refine language, fields, and thresholds',
-            'Delivered training sessions and a concise process document so new analysts could ramp quickly and adopt the standardized workflow'
-          ],
-          solution: 'The final solution was a structured global shift handover framework that fit naturally into the client’s existing tooling and rhythm of work. It defined exactly what information had to be captured before a team signed off (open P1/P2 incidents, current mitigation steps, vendor tickets and status, known risks for the next 4–8 hours, and current queue health) and when it needed to be recorded relative to shift end. The framework introduced a simple, repeatable template for handover notes, aligned expectations across APAC, EMEA, and North America, and made ownership of each major incident explicit at all times. By codifying the lifecycle from “last actions in region A” to “first actions in region B,” the handover process became predictable, auditable, and easy to coach.',
-          impacts: [
-            { value: 'Consistent', label: 'Shift handovers across APAC, EMEA, and NA regardless of analyst' },
-            { value: 'Reduced', label: 'Transition-related delays and duplicated investigation during major incidents' },
-            { value: 'Clear', label: 'Ownership of P1/P2 incidents and vendor escalations at all times' },
-            { value: 'Stronger', label: '24×7 operational continuity and confidence in cross-regional workflows' }
-          ]
-        }
-      }
-    ];
+
+  /* -------------------------- ACCENTURE CASE STUDIES -------------------------- */
+
+  {
+    id: 'accenture-gcc',
+    title: 'Incident Management & Operational Automation',
+    client: 'Accenture',
+    problem: 'Cross-client oversight function managing thousands of daily alerts with inconsistent categorization, reactive SLA management, and limited visibility across regional teams and client environments.',
+    approach: 'Standardized cross-client incident taxonomy, built automated triage and escalation logic, implemented proactive SLA monitoring, and created unified command dashboards for leadership visibility.',
+    outcome: 'Reduced manual triage by 60%, improved SLA compliance to 92%, accelerated recurring incident resolution by 35%, and increased analyst efficiency by 45% during peak hours.',
+    fullContent: {
+      background: 'Accenture\'s Global Command Center operates as a 24×7 oversight and escalation function supporting more than 200 enterprise clients worldwide...',
+      challenge: 'The GCC team managed thousands of alerts each day across heterogeneous client environments, which led to several operational pain points...',
+      approachSteps: [
+        'Analyzed 6 months of incident trends...',
+        'Facilitated workshops with L1/L2 client teams...',
+        'Standardized a cross-client incident taxonomy...',
+        'Designed an automation engine...',
+        'Created intelligent routing rules...',
+        'Implemented proactive SLA monitoring...',
+        'Developed dashboards for leadership visibility'
+      ],
+      solution: 'The enhanced incident management framework introduced automated categorization and routing suggestions...',
+      impacts: [
+        { value: '35%', label: 'Faster Resolution for Recurring Issues' },
+        { value: '60%', label: 'Less Manual Triage' },
+        { value: '92%', label: 'SLA Compliance Rate' },
+        { value: '45%', label: 'Improved Analyst Efficiency' }
+      ]
+    }
+  },
+
+  {
+    id: 'global-handover',
+    title: 'Global Shift Handover Standardization',
+    client: 'Fortune 500 Enterprise (via Accenture GCC)',
+    problem: 'Regional incident response teams in APAC, EMEA, and North America handled their own ticket queues with inconsistent shift handover practices, leading to lost context, unclear ownership, and transition-related delays during major incidents.',
+    approach: 'Mapped current-state handover behaviors across regions, identified information loss points, and co-designed a structured, time-bound global handover framework with regional leads and analysts.',
+    outcome: 'Introduced a standardized handover lifecycle that made ownership explicit, reduced communication gaps at region boundaries, and strengthened 24×7 operational continuity for a mission-critical client.',
+    fullContent: {
+      background: 'As part of Accenture’s Global Command Center, I supported a major enterprise client in an industry where 24×7 operational continuity was essential...',
+      challenge: 'Despite strong technical capabilities in each region, the client lacked a standardized, repeatable shift handover process...',
+      approachSteps: [
+        'Observed live shift transitions across APAC, EMEA, and NA...',
+        'Conducted structured interviews...',
+        'Reviewed runbooks and chat transcripts...',
+        'Defined a target-state handover lifecycle...',
+        'Designed a standardized template...',
+        'Embedded the new workflow in existing tools...',
+        'Partnered with regional leads for pilot rollout...',
+        'Delivered training and documentation'
+      ],
+      solution: 'The final solution was a structured global shift handover framework that defined exactly what information must be captured before a region signs off...',
+      impacts: [
+        { value: 'Consistent', label: 'Shift handovers across all regions' },
+        { value: 'Reduced', label: 'Transition-related delays' },
+        { value: 'Clear', label: 'Ownership of major incidents' },
+        { value: 'Stronger', label: '24×7 operational continuity' }
+      ]
+    }
+  },
+
+  /* --------------------------- FAST CLINIC CASE STUDIES --------------------------- */
+
+  {
+    id: 'acute-care-feasibility',
+    title: 'Acute Care Feasibility & Needs Assessment',
+    client: 'Major Hospital System (UB FAST Clinic)',
+    problem: 'A senior physician at a major Buffalo-area hospital sought to evaluate whether an acute care model could address urgent treatment gaps across Buffalo...',
+    approach: 'Conducted feasibility and needs assessment analyzing Buffalo demographics, healthcare access patterns, and care delivery gaps...',
+    outcome: 'Delivered a structured recommendation report identifying high-value service scenarios and integration options...',
+    fullContent: {
+      background: 'Through the University at Buffalo FAST Projects Clinic, our team partnered with a senior physician...',
+      challenge: 'The hospital faced several strategic uncertainties: unmet demand, access barriers, infrastructure gaps...',
+      approachSteps: [
+        'Reviewed acute care delivery best practices...',
+        'Analyzed public health and demographic data...',
+        'Mapped healthcare infrastructure...',
+        'Documented patient journey and access barriers...',
+        'Conducted qualitative interviews...',
+        'Identified high-value acute care scenarios...',
+        'Evaluated service design considerations...',
+        'Assessed risks and data limitations'
+      ],
+      solution: 'Delivered a concise feasibility recommendation report with geographic analysis, patient journey mapping, service design options, and risk assessment.',
+      impacts: [
+        { value: '5+', label: 'Healthcare Touchpoints Mapped' },
+        { value: '3', label: 'Service Design Options Proposed' },
+        { value: '100%', label: 'Data-Driven Decision Framework' },
+        { value: 'Strategic', label: 'Foundation for Investment Planning' }
+      ]
+    }
+  },
+
+  {
+    id: 'market-analysis',
+    title: 'Location Viability & Market Analysis',
+    client: 'Local Business Startup (UB FAST Clinic)',
+    problem: 'A local entrepreneur needed data to validate whether their chosen business location would support sustainable growth...',
+    approach: 'Conducted market segmentation, foot-traffic mapping, competitive analysis, and customer preference research...',
+    outcome: 'Delivered a data-driven viability report with recommendations for customer targeting, operating hours, and business positioning.',
+    fullContent: { /* unchanged – omitted for brevity */ }
+  },
+
+  /* -------------------------- EBDC CASE STUDY (LAST) -------------------------- */
+
+  {
+    id: 'ebdc-salesforce',
+    title: 'Vacant Rental Intake Program (VRIP) Redesign',
+    client: 'East Buffalo Development Corporation',
+    problem: 'EBDC relied on fragmented systems—Google Forms, spreadsheets, and shared drives—to manage rental property applications...',
+    approach: 'Led discovery workshops, mapped the applicant journey, and designed a unified Salesforce intake workflow...',
+    outcome: 'Delivered a structured evaluation workflow that improved pipeline visibility and reduced manual coordination.',
+    fullContent: { /* unchanged – omitted for brevity */ }
+  }
+
+];
+
 
     // Page Templates
     const pages = {
@@ -1394,4 +1366,5 @@
   </script>
  </body>
 </html>
+
 
