@@ -879,18 +879,39 @@
     // Page Templates
     const pages = {
       home: () => `
-        <section class="hero-section">
-          <div class="hero-content">
-            <h1 class="hero-title" id="hero-name">${config.consultant_name}</h1>
-            <p class="hero-subtitle" id="hero-tagline">${config.tagline}</p>
-            <p class="hero-description" id="hero-statement">${config.hero_statement}</p>
-            <div class="hero-buttons">
-              <button class="btn-primary" onclick="navigateTo('case-studies')">View Case Studies</button>
-              <button class="btn-secondary" onclick="navigateTo('about')">About Me</button>
-              <button class="btn-secondary" onclick="navigateTo('contact')">Get In Touch</button>
-            </div>
-          </div>
-        </section>
+  <section class="hero-section">
+    <div class="hero-content" style="display:flex; align-items:center; gap:2rem; flex-wrap:wrap;">
+
+      <!-- Headshot -->
+      <img 
+        src="headshot.jpg" 
+        alt="Piyush Awachar" 
+        style="
+          width:160px;
+          height:160px;
+          border-radius:50%;
+          object-fit:cover;
+          border:3px solid white;
+          box-shadow:0 4px 12px rgba(0,0,0,0.2);
+        "
+      />
+
+      <!-- Text Content -->
+      <div>
+        <h1 class="hero-title" id="hero-name">${config.consultant_name}</h1>
+        <p class="hero-subtitle" id="hero-tagline">${config.tagline}</p>
+        <p class="hero-description" id="hero-statement">${config.hero_statement}</p>
+
+        <div class="hero-buttons">
+          <button class="btn-primary" onclick="navigateTo('case-studies')">View Case Studies</button>
+          <button class="btn-secondary" onclick="navigateTo('about')">About Me</button>
+          <button class="btn-secondary" onclick="navigateTo('contact')">Get In Touch</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
 
         <section class="content-section">
           <h2 class="section-title">Core Competencies</h2>
@@ -1366,6 +1387,7 @@
   </script>
  </body>
 </html>
+
 
 
 
