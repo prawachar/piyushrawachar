@@ -1,0 +1,1652 @@
+<!doctype html>
+<html lang="en" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piyush Awachar - Business Analyst &amp; Project Consultant</title>
+  <script src="/_sdk/element_sdk.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      box-sizing: border-box;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: #1e293b;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    .page-wrapper {
+      width: 100%;
+      min-height: 100%;
+      background: #ffffff;
+      overflow-auto;
+    }
+
+    /* Navigation */
+    .nav-container {
+      background: #ffffff;
+      border-bottom: 1px solid #e2e8f0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-content {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 1.25rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #1e40af;
+      letter-spacing: -0.025em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2.5rem;
+      list-style: none;
+    }
+
+    .nav-link {
+      color: #475569;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.9375rem;
+      transition: color 0.2s ease;
+      cursor: pointer;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: #1e40af;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      background: linear-gradient(135deg, #1e40af 0%, #0f172a 100%);
+      color: white;
+      padding: 6rem 2rem;
+    }
+
+    .hero-content {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .hero-title {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      line-height: 1.1;
+      letter-spacing: -0.025em;
+    }
+
+    .hero-subtitle {
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-bottom: 1rem;
+      color: #cbd5e1;
+    }
+
+    .hero-description {
+      font-size: 1.125rem;
+      max-width: 800px;
+      margin-bottom: 2.5rem;
+      color: #e2e8f0;
+      line-height: 1.7;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: #ffffff;
+      color: #1e40af;
+      padding: 0.875rem 2rem;
+      border-radius: 0.375rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.2s ease;
+      border: none;
+      cursor: pointer;
+      font-size: 0.9375rem;
+    }
+
+    .btn-primary:hover {
+      background: #f1f5f9;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: #ffffff;
+      padding: 0.875rem 2rem;
+      border-radius: 0.375rem;
+      text-decoration: none;
+      font-weight: 600;
+      border: 2px solid #ffffff;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      font-size: 0.9375rem;
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+      transform: translateY(-2px);
+    }
+
+    /* Content Sections */
+    .content-section {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 5rem 2rem;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: #0f172a;
+      letter-spacing: -0.025em;
+    }
+
+    .section-subtitle {
+      font-size: 1.125rem;
+      color: #64748b;
+      margin-bottom: 3rem;
+      max-width: 700px;
+    }
+
+    /* Highlights Grid */
+    .highlights-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .highlight-card {
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 0.5rem;
+      border: 1px solid #e2e8f0;
+      transition: all 0.3s ease;
+    }
+
+    .highlight-card:hover {
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      transform: translateY(-4px);
+    }
+
+    .highlight-icon {
+      width: 48px;
+      height: 48px;
+      background: #dbeafe;
+      border-radius: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.25rem;
+      font-size: 1.5rem;
+    }
+
+    .highlight-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      color: #0f172a;
+    }
+
+    .highlight-description {
+      font-size: 0.9375rem;
+      color: #64748b;
+      line-height: 1.6;
+    }
+
+    /* Case Studies Grid */
+    .case-studies-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .case-study-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .case-study-card:hover {
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      transform: translateY(-6px);
+    }
+
+    .case-study-header {
+      background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+      padding: 2rem;
+      color: white;
+    }
+
+    .case-study-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      line-height: 1.3;
+    }
+
+    .case-study-client {
+      font-size: 0.875rem;
+      color: #cbd5e1;
+    }
+
+    .case-study-body {
+      padding: 1.5rem 2rem;
+    }
+
+    .case-study-section {
+      margin-bottom: 1.25rem;
+    }
+
+    .case-study-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #64748b;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
+    }
+
+    .case-study-text {
+      font-size: 0.9375rem;
+      color: #334155;
+      line-height: 1.6;
+    }
+
+    .case-study-footer {
+      padding: 1.5rem 2rem;
+      border-top: 1px solid #e2e8f0;
+    }
+
+    .read-more-btn {
+      background: #1e40af;
+      color: white;
+      padding: 0.625rem 1.5rem;
+      border-radius: 0.375rem;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.875rem;
+      display: inline-block;
+      transition: all 0.2s ease;
+      border: none;
+      cursor: pointer;
+    }
+
+    .read-more-btn:hover {
+      background: #1e3a8a;
+      transform: translateY(-2px);
+    }
+
+    /* About Page */
+    .bio-section {
+      background: #f8fafc;
+      padding: 3rem;
+      border-radius: 0.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .bio-text {
+      font-size: 1.125rem;
+      line-height: 1.8;
+      color: #334155;
+      margin-bottom: 1.5rem;
+    }
+
+    .strengths-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .strength-item {
+      background: #ffffff;
+      padding: 1.5rem;
+      border-radius: 0.375rem;
+      border-left: 4px solid #1e40af;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    }
+
+    .strength-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #0f172a;
+    }
+
+    /* Timeline */
+    .timeline {
+      position: relative;
+      padding-left: 3rem;
+      margin-top: 3rem;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: #e2e8f0;
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 3rem;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -3.5rem;
+      top: 0.25rem;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #1e40af;
+      border: 3px solid #ffffff;
+      box-shadow: 0 0 0 2px #e2e8f0;
+    }
+
+    .timeline-year {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #1e40af;
+      margin-bottom: 0.25rem;
+    }
+
+    .timeline-title {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: #0f172a;
+      margin-bottom: 0.5rem;
+    }
+
+    .timeline-company {
+      font-size: 0.9375rem;
+      color: #64748b;
+      margin-bottom: 0.75rem;
+    }
+
+    .timeline-description {
+      font-size: 0.9375rem;
+      color: #475569;
+      line-height: 1.6;
+    }
+
+    /* Case Study Detail Page */
+    .case-detail-hero {
+      background: linear-gradient(135deg, #0f172a 0%, #1e40af 100%);
+      color: white;
+      padding: 4rem 2rem;
+    }
+
+    .case-detail-content {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .case-detail-section {
+      margin-bottom: 4rem;
+    }
+
+    .case-detail-heading {
+      font-size: 1.875rem;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 3px solid #1e40af;
+    }
+
+    .case-detail-text {
+      font-size: 1.0625rem;
+      line-height: 1.8;
+      color: #334155;
+      margin-bottom: 1.5rem;
+    }
+
+    .case-detail-list {
+      list-style: none;
+      margin-left: 1.5rem;
+    }
+
+    .case-detail-list li {
+      font-size: 1.0625rem;
+      line-height: 1.8;
+      color: #334155;
+      margin-bottom: 0.75rem;
+      position: relative;
+      padding-left: 1.5rem;
+    }
+
+    .case-detail-list li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: #1e40af;
+      font-weight: 600;
+    }
+
+    .impact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .impact-card {
+      background: #f8fafc;
+      padding: 1.5rem;
+      border-radius: 0.375rem;
+      border-left: 4px solid #10b981;
+      text-align: center;
+    }
+
+    .impact-value {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 0.5rem;
+    }
+
+    .impact-label {
+      font-size: 0.875rem;
+      color: #64748b;
+      font-weight: 500;
+    }
+
+    /* Visual Diagram Placeholder */
+    .diagram-placeholder {
+      background: #f8fafc;
+      border: 2px dashed #cbd5e1;
+      border-radius: 0.5rem;
+      padding: 3rem;
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    .diagram-placeholder svg {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Contact Form */
+    .contact-form {
+      max-width: 600px;
+      margin: 2rem auto;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 0.9375rem;
+      font-weight: 600;
+      color: #0f172a;
+      margin-bottom: 0.5rem;
+    }
+
+    .form-input, .form-textarea {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1px solid #cbd5e1;
+      border-radius: 0.375rem;
+      font-size: 0.9375rem;
+      font-family: inherit;
+      transition: all 0.2s ease;
+    }
+
+    .form-input:focus, .form-textarea:focus {
+      outline: none;
+      border-color: #1e40af;
+      box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
+    }
+
+    .form-textarea {
+      resize: vertical;
+      min-height: 150px;
+    }
+
+    .submit-btn {
+      background: #1e40af;
+      color: white;
+      padding: 0.875rem 2rem;
+      border-radius: 0.375rem;
+      font-weight: 600;
+      font-size: 0.9375rem;
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      width: 100%;
+    }
+
+    .submit-btn:hover {
+      background: #1e3a8a;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .submit-btn:disabled {
+      background: #94a3b8;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .contact-info {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      margin-top: 3rem;
+      flex-wrap: wrap;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      color: #334155;
+      font-size: 0.9375rem;
+    }
+
+    .contact-icon {
+      width: 40px;
+      height: 40px;
+      background: #dbeafe;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.125rem;
+    }
+
+    .contact-link {
+      color: #1e40af;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Back Button */
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #1e40af;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9375rem;
+      margin-bottom: 2rem;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    .back-btn:hover {
+      gap: 0.75rem;
+    }
+
+    /* Footer */
+    .footer {
+      background: #0f172a;
+      color: #cbd5e1;
+      padding: 3rem 2rem;
+      text-align: center;
+      margin-top: 5rem;
+    }
+
+    .footer-text {
+      font-size: 0.875rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav-links {
+        gap: 1.5rem;
+      }
+
+      .nav-link {
+        font-size: 0.875rem;
+      }
+
+      .hero-title {
+        font-size: 2.5rem;
+      }
+
+      .hero-subtitle {
+        font-size: 1.25rem;
+      }
+
+      .hero-description {
+        font-size: 1rem;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .case-studies-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .timeline {
+        padding-left: 2rem;
+      }
+
+      .timeline-item::before {
+        left: -2.5rem;
+      }
+    }
+
+    /* Loading State */
+    .loading {
+      opacity: 0.6;
+      pointer-events: none;
+    }
+
+    /* Success Message */
+    .success-message {
+      background: #d1fae5;
+      color: #065f46;
+      padding: 1rem;
+      border-radius: 0.375rem;
+      margin-top: 1rem;
+      text-align: center;
+      font-weight: 500;
+    }
+  </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full">
+  <div class="page-wrapper"><!-- Navigation -->
+   <nav class="nav-container">
+    <div class="nav-content">
+     <div class="logo" id="logo">
+      Piyush Awachar
+     </div>
+     <ul class="nav-links">
+      <li><a class="nav-link active" data-page="home">Home</a></li>
+      <li><a class="nav-link" data-page="about">About</a></li>
+      <li><a class="nav-link" data-page="case-studies">Case Studies</a></li>
+      <li><a class="nav-link" data-page="contact">Contact</a></li>
+     </ul>
+    </div>
+   </nav><!-- Main Content Container -->
+   <div id="main-content"></div><!-- Footer -->
+   <footer class="footer">
+    <p class="footer-text">© 2024 Piyush Raghunath Awachar. All rights reserved.</p>
+   </footer>
+  </div>
+  <script>
+    // Configuration
+    const defaultConfig = {
+      consultant_name: "Piyush Raghunath Awachar",
+      tagline: "Business Analyst & Project Consultant",
+      hero_statement: "I help organizations solve complex operational problems through structured analysis, technology alignment, and cross-functional collaboration.",
+      email_address: "prawachar40@gmail.com",
+      phone_number: "716-547-1068",
+      linkedin_url: "https://linkedin.com/in/piyush-awachar",
+      primary_color: "#1e40af",
+      secondary_color: "#0f172a",
+      text_color: "#334155",
+      background_color: "#ffffff",
+      accent_color: "#3b82f6",
+      font_family: "Inter",
+      font_size: 16
+    };
+
+    let config = { ...defaultConfig };
+    let currentPage = 'home';
+
+    // Case Studies Data
+    const caseStudies = [
+      {
+        id: 'ebdc-salesforce',
+        title: 'Vacant Rental Intake Program (VRIP) Redesign',
+        client: 'East Buffalo Development Corporation',
+        problem: 'EBDC relied on fragmented systems—Google Forms, spreadsheets, and shared drives—to manage rental property applications. As program volume increased, the team lost visibility into application status, struggled to enforce consistent evaluation criteria, and faced delays in tracking requirements and scoring decisions.',
+        approach: 'Led discovery sessions with program leadership to map the end-to-end applicant journey and identify critical decision points. Designed a unified Salesforce solution supporting multi-property submissions, automated eligibility validation, and construction-phase documentation tracking.',
+        outcome: 'Delivered a structured evaluation workflow that reduced manual coordination, provided real-time visibility into pipeline bottlenecks, and established a scalable platform for future automation and executive reporting.',
+        fullContent: {
+          background: 'The East Buffalo Development Corporation (EBDC) is a nonprofit serving Buffalo\'s East Side that manages New York State\'s Vacant Rental Intake Program (VRIP). The program revitalizes vacant rental properties to strengthen neighborhood stability. Prior to this engagement, EBDC managed applications through disconnected tools—Google Forms, spreadsheets, emails, and shared drives—creating bottlenecks and data inconsistencies as program volume grew.',
+          challenge: 'The organization faced several critical challenges: rental property applications were processed through fragmented systems, leading to lost documentation and status tracking gaps; there was no centralized system to manage multi-property submissions or enforce eligibility rules; scoring decisions lacked consistency and transparency; leadership had limited visibility into pipeline metrics and bottlenecks; and the intake team spent excessive time on manual coordination rather than applicant support and construction-phase oversight.',
+          approachSteps: [
+            'Facilitated discovery workshops with program leadership, intake coordinators, and construction oversight staff',
+            'Mapped the complete applicant journey from initial inquiry through construction completion',
+            'Identified critical decision points, eligibility requirements, and documentation checkpoints',
+            'Designed Salesforce data model supporting multi-property submissions and construction-phase tracking',
+            'Introduced two-path intake model: formal applications vs. post-deadline prescreening requests',
+            'Built automated eligibility validation rules and structured scoring workflows',
+            'Created custom Lightning pages for application review and construction documentation',
+            'Developed executive dashboards showing pipeline status, evaluation bottlenecks, and award metrics',
+            'Conducted user acceptance testing and delivered training for program staff'
+          ],
+          solution: 'Implemented a unified Salesforce solution featuring a dual-path intake system for formal applications and prescreening requests, automated eligibility validation based on program rules, multi-property submission support with linked property records, structured evaluation workflows with consistent scoring criteria, construction-phase documentation tracking, automated status notifications for applicants, and executive dashboards providing real-time visibility into pipeline bottlenecks and award decisions.',
+          impacts: [
+            { value: '40%', label: 'Reduction in Processing Time' },
+            { value: '100%', label: 'Application Tracking Accuracy' },
+            { value: '25hrs', label: 'Weekly Time Saved' },
+            { value: '2x', label: 'Faster Award Decisions' }
+          ]
+        }
+      },
+      {
+        id: 'market-analysis',
+        title: 'Location Viability & Market Analysis',
+        client: 'Local Business Startup (UB FAST Clinic)',
+        problem: 'A local entrepreneur planning to launch a retail business needed to validate whether their selected street location would support sustainable growth. Without data on customer behavior, foot traffic patterns, and competitive dynamics, the business faced significant launch risk.',
+        approach: 'Conducted comprehensive market segmentation and competitive analysis, including primary survey research, demographic profiling, foot-traffic mapping, and competitive saturation assessment to evaluate location viability.',
+        outcome: 'Delivered a data-driven feasibility report with clear recommendations on target customer segments, optimal operating hours, and location-specific growth opportunities, enabling the client to make an informed launch decision.',
+        fullContent: {
+          background: 'Through the University at Buffalo FAST Projects Clinic, our team partnered with a local business owner preparing to launch a retail operation in Buffalo. The client had identified a potential street location but lacked objective data to assess whether the area would generate sufficient customer demand and support long-term profitability. The decision required understanding neighborhood demographics, customer preferences, traffic patterns, and competitive landscape.',
+          challenge: 'The client faced several critical uncertainties: customer demographics and purchasing behaviors in the area were unknown; competitive saturation and market gaps were not clearly understood; there was no data on customer preferences or demand for the proposed business type; the overall business viability of the location remained unvalidated, creating significant financial risk for the launch; and without market insights, the client couldn\'t determine optimal product offerings or pricing strategy.',
+          approachSteps: [
+            'Designed and deployed customer surveys to capture demographic profiles and purchasing preferences',
+            'Analyzed census and demographic data to identify resident income levels, age distribution, and household characteristics',
+            'Assessed competitive saturation by cataloging similar businesses within the target area',
+            'Evaluated accessibility factors including parking availability, public transit access, and pedestrian infrastructure',
+            'Analyzed survey responses to identify customer preferences and potential demand patterns',
+            'Synthesized findings into customer segment profiles with purchase likelihood estimates',
+            'Developed recommendations for target customer segments based on survey insights',
+            'Created actionable recommendations for business positioning and launch strategy'
+          ],
+          solution: 'Delivered a comprehensive market analysis report featuring detailed demographic and psychographic customer segmentation based on survey insights, competitive landscape assessment identifying market gaps and saturation risks, recommended target customer segments with demand indicators, customer preference analysis informing product and service offerings, and location-specific growth opportunities with actionable launch strategies. The report provided the client with a clear, data-backed framework for their go/no-go decision and launch planning.',
+          impacts: [
+            { value: '60+', label: 'Survey Responses Collected' },
+            { value: '15+', label: 'Competitor Locations Analyzed' },
+            { value: '3', label: 'Target Segments Identified' },
+            { value: '100%', label: 'Data-Driven Decision Framework' }
+          ]
+        }
+      },
+      {
+        id: 'acute-care-feasibility',
+        title: 'Acute Care Feasibility & Needs Assessment',
+        client: 'Major Hospital System (UB FAST Clinic)',
+        problem: 'A senior physician at a major Buffalo-area hospital sought to evaluate whether an acute care model could address urgent treatment gaps across Buffalo. Without data on community demand, access barriers, and infrastructure requirements, the hospital lacked a clear foundation for investment decisions.',
+        approach: 'Conducted feasibility and needs assessment analyzing Buffalo demographics, healthcare access patterns, and care delivery gaps to determine acute care viability and optimal service design.',
+        outcome: 'Delivered a structured recommendation report identifying high-value service scenarios, integration options with existing hospital infrastructure, and key risks—enabling informed strategic planning for acute care expansion.',
+        fullContent: {
+          background: 'Through the University at Buffalo FAST Projects Clinic, our team partnered with a senior physician from a major hospital system serving the Buffalo region. The client wanted to explore whether introducing an acute care model in Buffalo would address unmet community needs. Acute care—short-term, urgent treatment for serious illness or injury—is typically delivered in emergency departments, urgent care centers, or short-stay hospital units. The core question was whether Buffalo had sufficient demand, access gaps, and supporting infrastructure to justify this service, and what form it should take.',
+          challenge: 'The hospital faced several strategic uncertainties: the scope and scale of unmet acute care demand in Buffalo were unknown; existing care delivery touchpoints and patient journeys for urgent conditions were not mapped; barriers preventing timely access to appropriate care—such as transportation, wait times, and cost—remained unquantified; potential overlap or conflict with existing emergency departments and urgent care centers needed clarification; and the hospital lacked a data-driven framework to evaluate investment risk and service design options.',
+          approachSteps: [
+            'Reviewed acute care delivery best practices and differentiated acute care from primary and chronic care models',
+            'Analyzed public health data for Buffalo: demographics, income levels, chronic disease prevalence, and insurance coverage',
+            'Mapped existing healthcare infrastructure including hospital EDs, urgent care centers, primary care clinics, and community health centers',
+            'Documented current patient journey for urgent care needs, identifying typical touchpoints and access barriers',
+            'Conducted qualitative stakeholder conversations with clinicians and community organizations to understand perceived care gaps',
+            'Identified scenarios where acute care could reduce avoidable ED utilization and improve timely treatment',
+            'Evaluated service design considerations: hours of operation, potential locations, staffing models, and hospital integration points',
+            'Assessed key risks, data limitations, and requirements for a full feasibility study'
+          ],
+          solution: 'Delivered a concise feasibility recommendation report providing hospital leadership with a structured, data-informed view of the acute care opportunity. The report included: geographic and demographic analysis highlighting underserved populations and high ED utilization patterns; patient journey mapping showing where acute care could intercept avoidable emergency visits; service design options for hours, locations, and integration with existing hospital operations; high-value use cases where acute care would deliver better outcomes than primary care or ED visits; and a risk and data gap assessment outlining next steps for detailed planning and community engagement.',
+          impacts: [
+            { value: '5+', label: 'Healthcare Touchpoints Mapped' },
+            { value: '3', label: 'Service Design Options Proposed' },
+            { value: '100%', label: 'Data-Driven Decision Framework' },
+            { value: 'Strategic', label: 'Foundation for Investment Planning' }
+          ]
+        }
+      },
+      {
+        id: 'accenture-gcc',
+        title: 'Incident Management & Operational Automation',
+        client: 'Accenture',
+        problem: 'Cross-client oversight function managing thousands of daily alerts with inconsistent categorization, reactive SLA management, and limited visibility across regional teams and client environments.',
+        approach: 'Standardized cross-client incident taxonomy, built automated triage and escalation logic, implemented proactive SLA monitoring, and created unified command dashboards for leadership visibility.',
+        outcome: 'Reduced manual triage by 60%, improved SLA compliance to 92%, accelerated recurring incident resolution by 35%, and increased analyst efficiency by 45% during peak hours.',
+        fullContent: {
+          background: 'Accenture\'s Global Command Center operates as a 24×7 oversight and escalation function supporting more than 200 enterprise clients worldwide. While each major client maintains its own incident response teams, the Command Center acts as the coordination layer that monitors cross-regional operations, identifies disruptions early, drives escalation workflows, and ensures that leadership receives accurate and timely updates during high-impact incidents.',
+          challenge: 'The GCC team managed thousands of alerts each day across heterogeneous client environments, which led to several operational pain points: incoming incidents from client-specific L1/L2 teams were often miscategorized, causing delays in engaging the correct resolver groups; manual triage and correlation consumed analyst time during peak traffic; SLA risks were identified late, creating reactive firefighting rather than proactive prevention; leadership lacked unified visibility across client environments, making it difficult to spot patterns or systemic issues early; and communication during priority incidents was inconsistent across regions and vendor teams. The Command Center needed a more standardized, automated, and data-driven way to handle incident intake, triage, escalations, and reporting.',
+          approachSteps: [
+            'Analyzed 6 months of incident trends across multiple clients to identify categorization patterns and high-frequency failure points',
+            'Facilitated workshops with L1/L2 client teams, cloud vendors (AWS, Microsoft), and internal engineering teams to understand routing logic and escalation triggers',
+            'Standardized a cross-client incident taxonomy aligned with ITIL, improving consistency in triage and reporting',
+            'Designed an automation engine using keyword patterns and historical categorization accuracy to suggest the correct category and priority',
+            'Created intelligent routing rules that factored in priority, business impact, and resolver team availability',
+            'Implemented proactive SLA monitoring with automated alerts to prevent breaches',
+            'Developed dashboards that gave leadership real-time visibility into queue health, backlog growth, MTTR, and regional performance'
+          ],
+          solution: 'The enhanced incident management framework introduced automated categorization and routing suggestions to reduce manual work, proactive SLA breach predictors and auto-escalation logic, unified communication workflows for cross-regional incident updates, real-time command dashboards consolidating multi-client operational health, and standardized incident taxonomy enabling consistent reporting and RCA documentation. This allowed the GCC to operate as a strategic command layer rather than just an alert-processing team.',
+          impacts: [
+            { value: '35%', label: 'Faster Resolution for Recurring Issues' },
+            { value: '60%', label: 'Less Manual Triage' },
+            { value: '92%', label: 'SLA Compliance Rate' },
+            { value: '45%', label: 'Improved Analyst Efficiency' }
+          ]
+        }
+      }
+    ];
+
+    // Page Templates
+    const pages = {
+      home: () => `
+        <section class="hero-section">
+          <div class="hero-content">
+            <h1 class="hero-title" id="hero-name">${config.consultant_name}</h1>
+            <p class="hero-subtitle" id="hero-tagline">${config.tagline}</p>
+            <p class="hero-description" id="hero-statement">${config.hero_statement}</p>
+            <div class="hero-buttons">
+              <button class="btn-primary" onclick="navigateTo('case-studies')">View Case Studies</button>
+              <button class="btn-secondary" onclick="navigateTo('about')">About Me</button>
+              <button class="btn-secondary" onclick="navigateTo('contact')">Get In Touch</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section">
+          <h2 class="section-title">Core Competencies</h2>
+          <p class="section-subtitle">Specialized expertise in driving operational excellence through technology and process optimization</p>
+          
+          <div class="highlights-grid">
+            <div class="highlight-card">
+              <div class="highlight-icon">🔷</div>
+              <h3 class="highlight-title">Salesforce Business Analyst</h3>
+              <p class="highlight-description">Designing CRM solutions, data models, and automated workflows that streamline operations and enhance customer relationships.</p>
+            </div>
+            
+            <div class="highlight-card">
+              <div class="highlight-icon">��</div>
+              <h3 class="highlight-title">IT Operations & Incident Management</h3>
+              <p class="highlight-description">Optimizing ITSM processes, reducing resolution times, and building operational dashboards for command center environments.</p>
+            </div>
+            
+            <div class="highlight-card">
+              <div class="highlight-icon">🗺️</div>
+              <h3 class="highlight-title">Process Mapping & Workflow Design</h3>
+              <p class="highlight-description">Documenting current-state processes, identifying inefficiencies, and designing future-state workflows that drive measurable improvements.</p>
+            </div>
+            
+            <div class="highlight-card">
+              <div class="highlight-icon">📈</div>
+              <h3 class="highlight-title">Data-Driven Problem Solving</h3>
+              <p class="highlight-description">Leveraging analytics, dashboards, and reporting to uncover insights and support evidence-based decision making.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section" style="background: #f8fafc; margin-top: 0; padding-top: 5rem; padding-bottom: 5rem;">
+          <h2 class="section-title">Featured Work</h2>
+          <p class="section-subtitle">Select case studies showcasing structured problem-solving and measurable business impact</p>
+          
+          <div class="case-studies-grid">
+            ${caseStudies.slice(0, 3).map(study => `
+              <div class="case-study-card" onclick="navigateTo('case-study', '${study.id}')">
+                <div class="case-study-header">
+                  <h3 class="case-study-title">${study.title}</h3>
+                  <p class="case-study-client">${study.client}</p>
+                </div>
+                <div class="case-study-body">
+                  <div class="case-study-section">
+                    <div class="case-study-label">Problem</div>
+                    <p class="case-study-text">${study.problem}</p>
+                  </div>
+                  <div class="case-study-section">
+                    <div class="case-study-label">Outcome</div>
+                    <p class="case-study-text">${study.outcome}</p>
+                  </div>
+                </div>
+                <div class="case-study-footer">
+                  <button class="read-more-btn">Read Case Study</button>
+                </div>
+              </div>
+            `).join('')}
+          </div>
+          
+          <div style="text-align: center; margin-top: 3rem;">
+            <button class="btn-primary" onclick="navigateTo('case-studies')">View All Case Studies</button>
+          </div>
+        </section>
+      `,
+
+      about: () => `
+        <section class="content-section">
+          <h1 class="section-title">About Me</h1>
+          <p class="section-subtitle">Business analyst and project consultant with 3+ years helping organizations solve operational challenges through structured analysis, process redesign, and technology implementation</p>
+          
+          <div class="bio-section">
+            <p class="bio-text">
+              I'm a business analyst and project consultant who helps organizations improve how they work. My approach combines structured problem-solving, stakeholder engagement, and technology implementation to deliver measurable operational improvements. I've worked across global enterprise operations, nonprofit CRM implementations, and community-impact consulting projects—always focused on understanding the problem, mapping the process, and designing solutions that work.
+            </p>
+            <p class="bio-text">
+              My background includes operational improvement consulting at Accenture, Salesforce implementation at East Buffalo Development Corporation, and process optimization projects through the University at Buffalo FAST Projects Clinic. I hold a Bachelor of Engineering in Computer Engineering and am completing a Master of Science in Management Information Systems at the University at Buffalo (June 2025).
+            </p>
+            <p class="bio-text">
+              What drives me is the opportunity to untangle complexity—whether that's redesigning a fragmented intake workflow, analyzing incident trends to reduce resolution time, or facilitating workshops to align stakeholders around a shared solution. I thrive in environments where I can listen, analyze, and build systems that make operations more efficient and transparent.
+            </p>
+          </div>
+
+          <h2 class="section-title" style="margin-top: 4rem;">Core Strengths</h2>
+          <div class="strengths-grid">
+            <div class="strength-item">
+              <p class="strength-title">Requirements Analysis & Documentation</p>
+            </div>
+            <div class="strength-item">
+              <p class="strength-title">Stakeholder Engagement & Workshops</p>
+            </div>
+            <div class="strength-item">
+              <p class="strength-title">Process Mapping & Workflow Design</p>
+            </div>
+            <div class="strength-item">
+              <p class="strength-title">Incident & Problem Management</p>
+            </div>
+            <div class="strength-item">
+              <p class="strength-title">CRM Design & Workflow Automation</p>
+            </div>
+            <div class="strength-item">
+              <p class="strength-title">Dashboard Development & Reporting</p>
+            </div>
+          </div>
+
+          <h2 class="section-title" style="margin-top: 4rem;">Professional Experience</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-year">January 2025 - Present</div>
+              <h3 class="timeline-title">Business Systems Analyst</h3>
+              <p class="timeline-company">East Buffalo Development Corporation</p>
+              <p class="timeline-description">
+                Leading Salesforce CRM implementation for New York State's Vacant Rental Intake Program. Designed intake-to-award workflows for rental property revitalization, built custom Lightning components, and created executive dashboards. Reduced application processing time by 40% and improved pipeline visibility for program leadership.
+              </p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-year">August 2024 - December 2024</div>
+              <h3 class="timeline-title">Business Analyst Consultant</h3>
+              <p class="timeline-company">University at Buffalo FAST Projects Clinic</p>
+              <p class="timeline-description">
+                Delivered consulting engagements for local businesses and healthcare organizations. Conducted market analysis and location viability assessments, evaluated acute care feasibility for a major hospital system, and optimized patient intake workflows—reducing no-show rates by 30% and improving capacity utilization by 25%.
+              </p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-year">November 2020 - December 2023</div>
+              <h3 class="timeline-title">Operations Analyst</h3>
+              <p class="timeline-company">Accenture</p>
+              <p class="timeline-description">
+                Supported global enterprise clients through a consulting-style operational improvement role focused on optimizing the incident lifecycle. Analyzed recurring incident patterns, redesigned triage workflows, and collaborated with engineering, cloud vendors, and cross-regional teams to reduce MTTR by 35% and improve SLA compliance to 92%. Delivered dashboards, trend analyses, and automation recommendations that helped leadership make data-driven decisions and proactively mitigate operational risk.
+              </p>
+            </div>
+          </div>
+
+          <h2 class="section-title" style="margin-top: 4rem;">Education</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-year">2024 - 2025</div>
+              <h3 class="timeline-title">Master of Science in Management Information Systems</h3>
+              <p class="timeline-company">University at Buffalo</p>
+              <p class="timeline-description">
+                Graduate studies focused on business intelligence, systems analysis, and project management. Completing degree in June 2025.
+              </p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-year">2016 - 2020</div>
+              <h3 class="timeline-title">Bachelor of Engineering in Computer Engineering</h3>
+              <p class="timeline-company">RMD Sinhgad School of Engineering</p>
+              <p class="timeline-description">
+                Undergraduate studies in computer engineering with focus on systems design and software development.
+              </p>
+            </div>
+          </div>
+
+          <div style="text-align: center; margin-top: 4rem;">
+            <button class="btn-primary" onclick="window.open('https://example.com/resume.pdf', '_blank', 'noopener,noreferrer')">
+              Download Resume
+            </button>
+          </div>
+        </section>
+      `,
+
+      'case-studies': () => `
+        <section class="content-section">
+          <h1 class="section-title">Case Studies</h1>
+          <p class="section-subtitle">Detailed examples of business analysis, process optimization, and technology implementation projects</p>
+          
+          <div class="case-studies-grid">
+            ${caseStudies.map(study => `
+              <div class="case-study-card" onclick="navigateTo('case-study', '${study.id}')">
+                <div class="case-study-header">
+                  <h3 class="case-study-title">${study.title}</h3>
+                  <p class="case-study-client">${study.client}</p>
+                </div>
+                <div class="case-study-body">
+                  <div class="case-study-section">
+                    <div class="case-study-label">Problem</div>
+                    <p class="case-study-text">${study.problem}</p>
+                  </div>
+                  <div class="case-study-section">
+                    <div class="case-study-label">Approach</div>
+                    <p class="case-study-text">${study.approach}</p>
+                  </div>
+                  <div class="case-study-section">
+                    <div class="case-study-label">Outcome</div>
+                    <p class="case-study-text">${study.outcome}</p>
+                  </div>
+                </div>
+                <div class="case-study-footer">
+                  <button class="read-more-btn">Read Case Study</button>
+                </div>
+              </div>
+            `).join('')}
+          </div>
+        </section>
+      `,
+
+      'case-study': (caseId) => {
+        const study = caseStudies.find(s => s.id === caseId);
+        if (!study) return '<p>Case study not found</p>';
+        
+        const content = study.fullContent;
+        return `
+          <div class="case-detail-hero">
+            <div style="max-width: 1280px; margin: 0 auto; padding: 0 2rem;">
+              <button class="back-btn" onclick="navigateTo('case-studies')" style="color: white; opacity: 0.9;">
+                �� Back to Case Studies
+              </button>
+              <h1 class="hero-title" style="font-size: 2.5rem; margin-bottom: 1rem;">${study.title}</h1>
+              <p class="hero-subtitle" style="color: #cbd5e1;">${study.client}</p>
+            </div>
+          </div>
+
+          <section class="content-section">
+            <div class="case-detail-content">
+              <div class="case-detail-section">
+                <h2 class="case-detail-heading">Client Background</h2>
+                <p class="case-detail-text">${content.background}</p>
+              </div>
+
+              <div class="case-detail-section">
+                <h2 class="case-detail-heading">The Challenge</h2>
+                <p class="case-detail-text">${content.challenge}</p>
+              </div>
+
+              <div class="case-detail-section">
+                <h2 class="case-detail-heading">Approach</h2>
+                <p class="case-detail-text" style="margin-bottom: 1.5rem;">I took a structured, stakeholder-centered approach to understand the problem and design an effective solution:</p>
+                <ul class="case-detail-list">
+                  ${content.approachSteps.map(step => `<li>${step}</li>`).join('')}
+                </ul>
+              </div>
+
+              <div class="case-detail-section">
+                <h2 class="case-detail-heading">Solution</h2>
+                <p class="case-detail-text">${content.solution}</p>
+                
+                ${caseId === 'ebdc-salesforce' ? `<div class="diagram-placeholder" style="background: white; border: none; padding: 2rem;">
+                  <svg viewBox="0 0 1400 2800" xmlns="http://www.w3.org/2000/svg">
+                    <!-- VRIP Intake Screening Process Flow -->
+                    <defs>
+                      <!-- Arrow markers -->
+                      <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                        <polygon points="0 0, 10 3, 0 6" fill="#1e40af" />
+                      </marker>
+                      <marker id="arrowhead-red" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                        <polygon points="0 0, 10 3, 0 6" fill="#dc2626" />
+                      </marker>
+                      <marker id="arrowhead-green" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                        <polygon points="0 0, 10 3, 0 6" fill="#10b981" />
+                      </marker>
+                    </defs>
+                    
+                    <!-- Title -->
+                    <text x="700" y="40" text-anchor="middle" font-family="Inter, sans-serif" font-size="24" font-weight="700" fill="#0f172a">VRIP Intake-to-Award Process Flow</text>
+                    <text x="700" y="65" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#64748b">East Buffalo Development Corporation | Vacant Rental Intake Program</text>
+                    
+                    <!-- 1. APPLICANT SUBMISSION -->
+                    <g id="step1">
+                      <!-- Actor Icon -->
+                      <circle cx="700" cy="130" r="20" fill="#dbeafe" stroke="#1e40af" stroke-width="2"/>
+                      <circle cx="700" cy="125" r="8" fill="#1e40af"/>
+                      <path d="M 700 133 Q 685 145, 685 155 L 715 155 Q 715 145, 700 133" fill="#1e40af"/>
+                      <text x="700" y="180" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#64748b">APPLICANT</text>
+                      
+                      <!-- Step box -->
+                      <rect x="570" y="200" width="260" height="70" rx="8" fill="#dbeafe" stroke="#1e40af" stroke-width="2"/>
+                      <text x="700" y="228" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#1e40af">1. Applicant Submission</text>
+                      <text x="700" y="247" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#475569">Applicant completes fillable VRIP</text>
+                      <text x="700" y="260" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#475569">application on WordPress website</text>
+                    </g>
+                    
+                    <!-- Arrow down -->
+                    <line x1="700" y1="270" x2="700" y2="310" stroke="#1e40af" stroke-width="2" marker-end="url(#arrowhead)"/>
+                    
+                    <!-- 2. SALESFORCE RECORD CREATION -->
+                    <g id="step2">
+                      <rect x="570" y="310" width="260" height="70" rx="8" fill="#dbeafe" stroke="#1e40af" stroke-width="2"/>
+                      <text x="700" y="338" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#1e40af">2. Salesforce Record Creation</text>
+                      <text x="700" y="357" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#475569">Creates Application record +</text>
+                      <text x="700" y="370" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#475569">related Property records</text>
+                      
+                      <!-- Email icon and notification -->
+                      <g transform="translate(880, 325)">
+                        <rect width="180" height="50" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/>
+                        <path d="M 15 18 L 25 23 L 35 18 L 35 30 L 15 30 Z M 15 18 L 25 13 L 35 18" fill="none" stroke="#f59e0b" stroke-width="1.5"/>
+                        <text x="50" y="26" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#92400e">Email Confirmation</text>
+                        <text x="50" y="38" font-family="Inter, sans-serif" font-size="9" fill="#92400e">Sent to applicant</text>
+                      </g>
+                      
+                      <!-- Connect email to main flow -->
+                      <line x1="830" y1="345" x2="880" y2="345" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrowhead)"/>
+                    </g>
+                    
+                    <!-- Arrow down -->
+                    <line x1="700" y1="380" x2="700" y2="420" stroke="#1e40af" stroke-width="2" marker-end="url(#arrowhead)"/>
+                    
+                    <!-- 3. INITIAL ELIGIBILITY SCREENING (DECISION) -->
+                    <g id="step3">
+                      <!-- Decision diamond -->
+                      <path d="M 700 420 L 820 500 L 700 580 L 580 500 Z" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+                      <text x="700" y="490" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#92400e">3. Initial Eligibility Check</text>
+                      <text x="700" y="505" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#92400e">Does application meet</text>
+                      <text x="700" y="518" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#92400e">baseline eligibility rules?</text>
+                      
+                      <!-- Criteria box -->
+                      <g transform="translate(880, 440)">
+                        <rect width="200" height="110" rx="6" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+                        <text x="10" y="18" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#475569">Eligibility Criteria:</text>
+                        <text x="10" y="34" font-family="Inter, sans-serif" font-size="9" fill="#64748b">✓ Property ownership verified</text>
+                        <text x="10" y="48" font-family="Inter, sans-serif" font-size="9" fill="#64748b">✓ NY State location</text>
+                        <text x="10" y="62" font-family="Inter, sans-serif" font-size="9" fill="#64748b">✓ Required fields present</text>
+                        <text x="10" y="76" font-family="Inter, sans-serif" font-size="9" fill="#64748b">✓ No disqualifying violations</text>
+                        <text x="10" y="90" font-family="Inter, sans-serif" font-size="9" fill="#64748b">✓ Correct application type</text>
+                        <text x="10" y="104" font-family="Inter, sans-serif" font-size="8" font-style="italic" fill="#94a3b8">(Automated Salesforce Flow)</text>
+                      </g>
+                    </g>
+                    
+                    <!-- NO path - to Hold Queue -->
+                    <line x1="580" y1="500" x2="400" y2="500" stroke="#dc2626" stroke-width="2" marker-end="url(#arrowhead-red)"/>
+                    <text x="490" y="490" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#dc2626">NO</text>
+                    
+                    <!-- 4. HOLD QUEUE / MANUAL REVIEW -->
+                    <g id="step4">
+                      <rect x="270" y="465" width="130" height="70" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+                      <text x="335" y="493" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#dc2626">4. Hold Queue</text>
+                      <text x="335" y="509" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#7f1d1d">Manual eligibility</text>
+                      <text x="335" y="523" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#7f1d1d">review required</text>
+                      
+                      <!-- Manual review decision -->
+                      <path d="M 335 570 L 405 620 L 335 670 L 265 620 Z" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+                      <text x="335" y="615" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#92400e">Confirmed</text>
+                      <text x="335" y="628" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#92400e">Ineligible?</text>
+                      
+                      <!-- Arrow from hold to manual decision -->
+                      <line x1="335" y1="535" x2="335" y2="570" stroke="#dc2626" stroke-width="2" marker-end="url(#arrowhead-red)"/>
+                    </g>
+                    
+                    <!-- YES from manual review - rejection email -->
+                    <line x1="265" y1="620" x2="180" y2="620" stroke="#dc2626" stroke-width="2" marker-end="url(#arrowhead-red)"/>
+                    <text x="220" y="610" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#dc2626">YES</text>
+                    
+                    <g transform="translate(20, 590)">
+                      <rect width="160" height="60" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+                      <path d="M 25 20 L 35 25 L 45 20 L 45 32 L 25 32 Z M 25 20 L 35 15 L 45 20" fill="none" stroke="#dc2626" stroke-width="1.5"/>
+                      <text x="60" y="27" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#7f1d1d">Rejection Email</text>
+                      <text x="60" y="40" font-family="Inter, sans-serif" font-size="9" fill="#7f1d1d">Ineligibility notice</text>
+                      <text x="60" y="52" font-family="Inter, sans-serif" font-size="9" fill="#7f1d1d">with reasoning</text>
+                    </g>
+                    
+                    <!-- End circle for rejection -->
+                    <circle cx="100" cy="690" r="20" fill="#7f1d1d" stroke="#dc2626" stroke-width="2"/>
+                    <text x="100" y="696" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="white">END</text>
+                    <line x1="100" y1="650" x2="100" y2="670" stroke="#dc2626" stroke-width="2" marker-end="url(#arrowhead-red)"/>
+                    
+                    <!-- NO from manual review - return to desk review -->
+                    <line x1="405" y1="620" x2="480" y2="620" stroke="#10b981" stroke-width="2"/>
+                    <line x1="480" y1="620" x2="480" y2="730" stroke="#10b981" stroke-width="2"/>
+                    <line x1="480" y1="730" x2="580" y2="730" stroke="#10b981" stroke-width="2" marker-end="url(#arrowhead-green)"/>
+                    <text x="440" y="610" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#10b981">NO</text>
+                    
+                    <!-- YES from eligibility check -->
+                    <line x1="700" y1="580" x2="700" y2="680" stroke="#10b981" stroke-width="2" marker-end="url(#arrowhead-green)"/>
+                    <text x="720" y="630" text-anchor="start" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#10b981">YES</text>
+                    
+                    <!-- 5. STAGE 2: DESK REVIEW -->
+                    <g id="step5">
+                      <rect x="580" y="680" width="240" height="80" rx="8" fill="#dbeafe" stroke="#1e40af" stroke-width="2"/>
+                      <text x="700" y="710" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#1e40af">5. Stage 2: Desk Review</text>
+                      <text x="700" y="728" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#475569">Staff reviews documents, scope of work,</text>
+                      <text x="700" y="742" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#475569">property details, and applicant history</text>
+                      
+                      <!-- Arrow down -->
+                      <line x1="700" y1="760" x2="700" y2="800" stroke="#1e40af" stroke-width="2" marker-end="url(#arrowhead)"/>
+                      
+                      <!-- Decision: Documents complete? -->
+                      <path d="M 700 800 L 800 860 L 700 920 L 600 860 Z" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+                      <text x="700" y="855" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#92400e">All Required</text>
+                      <text x="700" y="870" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#92400e">Documents Submitted?</text>
+                    </g>
+                    
+                    <!-- NO - Request documents loop -->
+                    <line x1="600" y1="860" x2="500" y2="860" stroke="#dc2626" stroke-width="2"/>
+                    <line x1="500" y1="860" x2="500" y2="730" stroke="#dc2626" stroke-width="2"/>
+                    <line x1="500" y1="730" x2="580" y2="730" stroke="#dc2626" stroke-width="2" marker-end="url(#arrowhead-red)"/>
+                    <text x="540" y="850" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#dc2626">NO</text>
+                    
+                    <g transform="translate(380, 820)">
+                      <rect width="110" height="50" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/>
+                      <path d="M 15 18 L 22 22 L 29 18 L 29 28 L 15 28 Z M 15 18 L 22 14 L 29 18" fill="none" stroke="#f59e0b" stroke-width="1.3"/>
+                      <text x="38" y="24" font-family="Inter, sans-serif" font-size="9" font-weight="600" fill="#92400e">Request Docs</text>
+                      <text x="38" y="36" font-family="Inter, sans-serif" font-size="8" fill="#92400e">with deadline</text>
+                    </g>
+                    
+                    <!-- YES - Continue to scoring -->
+                    <line x1="700" y1="920" x2="700" y2="970" stroke="#10b981" stroke-width="2" marker-end="url(#arrowhead-green)"/>
+                    <text x="720" y="950" text-anchor="start" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#10b981">YES</text>
+                    
+                    <!-- 6. SCORING PHASE -->
+                    <g id="step6">
+                      <rect x="580" y="970" width="240" height="70" rx="8" fill="#dbeafe" stroke="#1e40af" stroke-width="2"/>
+                      <text x="700" y="998" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#1e40af">6. Scoring Phase</text>
+                      <text x="700" y="1016" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#475569">System applies scoring rubric (property</text>
+                      <text x="700" y="1030" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#475569">condition, tax status, violations, impact)</text>
+                      
+                      <!-- Arrow down -->
+                      <line x1="700" y1="1040" x2="700" y2="1080" stroke="#1e40af" stroke-width="2" marker-end="url(#arrowhead)"/>
+                      
+                      <!-- Decision: Meets scoring threshold? -->
+                      <path d="M 700 1080 L 800 1140 L 700 1200 L 600 1140 Z" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+                      <text x="700" y="1135" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#92400e">Meets Scoring</text>
+                      <text x="700" y="1150" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#92400e">Threshold?</text>
+                    </g>
+                    
+                    <!-- NO - Low priority/waitlist -->
+                    <line x1="600" y1="1140" x2="420" y2="1140" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrowhead)"/>
+                    <text x="510" y="1130" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#f59e0b">NO</text>
+                    
+                    <g transform="translate(240, 1100)">
+                      <rect width="180" height="80" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+                      <text x="90" y="25" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#92400e">Low Priority / Waitlist</text>
+                      <text x="90" y="42" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#92400e">Flagged based on capacity</text>
+                      <path d="M 30 55 L 38 59 L 46 55 L 46 66 L 30 66 Z M 30 55 L 38 51 L 46 55" fill="none" stroke="#f59e0b" stroke-width="1.3"/>
+                      <text x="60" y="63" font-family="Inter, sans-serif" font-size="9" font-weight="600" fill="#92400e">Status update sent</text>
+                    </g>
+                    
+                    <!-- YES - Continue to pre-award -->
+                    <line x1="700" y1="1200" x2="700" y2="1250" stroke="#10b981" stroke-width="2" marker-end="url(#arrowhead-green)"/>
+                    <text x="720" y="1230" text-anchor="start" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#10b981">YES</text>
+                    
+                    <!-- 7. PRE-AWARD COMPLIANCE REVIEW -->
+                    <g id="step7">
+                      <rect x="560" y="1250" width="280" height="80" rx="8" fill="#dbeafe" stroke="#1e40af" stroke-width="2"/>
+                      <text x="700" y="1280" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#1e40af">7. Pre-Award Compliance Review</text>
+                      <text x="700" y="1298" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#475569">Staff verifies compliance documents:</text>
+                      <text x="700" y="1312" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#475569">IDs, insurance, deed, asbestos report</text>
+                      
+                      <!-- Arrow down -->
+                      <line x1="700" y1="1330" x2="700" y2="1370" stroke="#1e40af" stroke-width="2" marker-end="url(#arrowhead)"/>
+                      
+                      <!-- Decision: Fully compliant? -->
+                      <path d="M 700 1370 L 800 1430 L 700 1490 L 600 1430 Z" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+                      <text x="700" y="1425" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#92400e">Applicant Fully</text>
+                      <text x="700" y="1440" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#92400e">Compliant?</text>
+                    </g>
+                    
+                    <!-- NO - Request compliance docs loop -->
+                    <line x1="600" y1="1430" x2="520" y2="1430" stroke="#dc2626" stroke-width="2"/>
+                    <line x1="520" y1="1430" x2="520" y2="1290" stroke="#dc2626" stroke-width="2"/>
+                    <line x1="520" y1="1290" x2="560" y2="1290" stroke="#dc2626" stroke-width="2" marker-end="url(#arrowhead-red)"/>
+                    <text x="550" y="1420" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#dc2626">NO</text>
+                    
+                    <g transform="translate(390, 1380)">
+                      <rect width="120" height="50" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/>
+                      <path d="M 15 18 L 23 22 L 31 18 L 31 28 L 15 28 Z M 15 18 L 23 14 L 31 18" fill="none" stroke="#f59e0b" stroke-width="1.3"/>
+                      <text x="40" y="24" font-family="Inter, sans-serif" font-size="9" font-weight="600" fill="#92400e">Request</text>
+                      <text x="40" y="36" font-family="Inter, sans-serif" font-size="9" font-weight="600" fill="#92400e">Compliance Docs</text>
+                    </g>
+                    
+                    <!-- YES - Continue to award recommendation -->
+                    <line x1="700" y1="1490" x2="700" y2="1540" stroke="#10b981" stroke-width="2" marker-end="url(#arrowhead-green)"/>
+                    <text x="720" y="1520" text-anchor="start" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#10b981">YES</text>
+                    
+                    <!-- 8. AWARD RECOMMENDATION + APPROVAL -->
+                    <g id="step8">
+                      <rect x="580" y="1540" width="240" height="70" rx="8" fill="#dbeafe" stroke="#1e40af" stroke-width="2"/>
+                      <text x="700" y="1568" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#1e40af">8. Award Recommendation</text>
+                      <text x="700" y="1586" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#475569">Application prepared for</text>
+                      <text x="700" y="1600" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#475569">award committee review</text>
+                      
+                      <!-- Arrow down -->
+                      <line x1="700" y1="1610" x2="700" y2="1650" stroke="#1e40af" stroke-width="2" marker-end="url(#arrowhead)"/>
+                      
+                      <!-- Decision: Committee approval? -->
+                      <path d="M 700 1650 L 800 1710 L 700 1770 L 600 1710 Z" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+                      <text x="700" y="1705" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#92400e">Approved by</text>
+                      <text x="700" y="1720" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#92400e">Review Committee?</text>
+                    </g>
+                    
+                    <!-- NO - Not approved -->
+                    <line x1="600" y1="1710" x2="450" y2="1710" stroke="#dc2626" stroke-width="2" marker-end="url(#arrowhead-red)"/>
+                    <text x="525" y="1700" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#dc2626">NO</text>
+                    
+                    <g transform="translate(280, 1680)">
+                      <rect width="170" height="60" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+                      <path d="M 20 20 L 28 24 L 36 20 L 36 31 L 20 31 Z M 20 20 L 28 16 L 36 20" fill="none" stroke="#dc2626" stroke-width="1.3"/>
+                      <text x="50" y="27" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#7f1d1d">Not Approved</text>
+                      <text x="50" y="40" font-family="Inter, sans-serif" font-size="9" fill="#7f1d1d">Email notification sent</text>
+                    </g>
+                    
+                    <!-- End circle for non-approval -->
+                    <circle cx="365" cy="1790" r="20" fill="#7f1d1d" stroke="#dc2626" stroke-width="2"/>
+                    <text x="365" y="1796" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="white">END</text>
+                    <line x1="365" y1="1740" x2="365" y2="1770" stroke="#dc2626" stroke-width="2" marker-end="url(#arrowhead-red)"/>
+                    
+                    <!-- YES - Continue to award letter -->
+                    <line x1="700" y1="1770" x2="700" y2="1830" stroke="#10b981" stroke-width="2" marker-end="url(#arrowhead-green)"/>
+                    <text x="720" y="1810" text-anchor="start" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#10b981">YES</text>
+                    
+                    <!-- 9. AWARD LETTER + CONSTRUCTION ONBOARDING -->
+                    <g id="step9">
+                      <rect x="550" y="1830" width="300" height="140" rx="8" fill="#d1fae5" stroke="#10b981" stroke-width="2"/>
+                      <text x="700" y="1860" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#065f46">9. Award Letter + Construction Phase</text>
+                      
+                      <!-- Document icon -->
+                      <rect x="585" y="1878" width="30" height="38" rx="3" fill="white" stroke="#10b981" stroke-width="1.5"/>
+                      <line x1="595" y1="1888" x2="605" y2="1888" stroke="#10b981" stroke-width="1"/>
+                      <line x1="595" y1="1895" x2="605" y2="1895" stroke="#10b981" stroke-width="1"/>
+                      <line x1="595" y1="1902" x2="605" y2="1902" stroke="#10b981" stroke-width="1"/>
+                      
+                      <text x="625" y="1893" font-family="Inter, sans-serif" font-size="10" fill="#065f46">Award letter issued</text>
+                      <text x="625" y="1906" font-family="Inter, sans-serif" font-size="10" fill="#065f46">to applicant</text>
+                      
+                      <line x1="570" y1="1920" x2="830" y2="1920" stroke="#10b981" stroke-width="1" stroke-dasharray="3,3"/>
+                      
+                      <!-- Checklist icon -->
+                      <rect x="585" y="1930" width="30" height="30" rx="3" fill="white" stroke="#10b981" stroke-width="1.5"/>
+                      <line x1="591" y1="1940" x2="595" y2="1944" stroke="#10b981" stroke-width="1.5"/>
+                      <line x1="595" y1="1944" x2="609" y2="1936" stroke="#10b981" stroke-width="1.5"/>
+                      <line x1="591" y1="1950" x2="595" y2="1954" stroke="#10b981" stroke-width="1.5"/>
+                      <line x1="595" y1="1954" x2="609" y2="1946" stroke="#10b981" stroke-width="1.5"/>
+                      
+                      <text x="625" y="1943" font-family="Inter, sans-serif" font-size="10" fill="#065f46">Construction Milestone</text>
+                      <text x="625" y="1956" font-family="Inter, sans-serif" font-size="10" fill="#065f46">Checklist created in SF</text>
+                      
+                      <!-- Email notification -->
+                      <g transform="translate(585, 1930)">
+                        <path d="M 10 45 L 18 49 L 26 45 L 26 55 L 10 55 Z M 10 45 L 18 41 L 26 45" fill="none" stroke="#10b981" stroke-width="1.3"/>
+                        <text x="35" y="52" font-family="Inter, sans-serif" font-size="9" fill="#065f46">Instructions for contractors,</text>
+                      </g>
+                      <text x="625" y="1990" font-family="Inter, sans-serif" font-size="9" fill="#065f46">docs, and milestone reporting</text>
+                    </g>
+                    
+                    <!-- Arrow down to end -->
+                    <line x1="700" y1="1970" x2="700" y2="2040" stroke="#10b981" stroke-width="2" marker-end="url(#arrowhead-green)"/>
+                    
+                    <!-- 10. END OF INTAKE FLOW -->
+                    <g id="step10">
+                      <circle cx="700" cy="2070" r="35" fill="#10b981" stroke="#065f46" stroke-width="3"/>
+                      <text x="700" y="2070" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="white">END OF</text>
+                      <text x="700" y="2085" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="white">INTAKE</text>
+                      
+                      <text x="700" y="2125" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#064e3b" font-weight="600">Application moves to Construction Phase</text>
+                      <text x="700" y="2140" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#065f46">Tracked via Salesforce milestone management</text>
+                    </g>
+                    
+                    <!-- Legend -->
+                    <g id="legend" transform="translate(50, 2200)">
+                      <text x="0" y="0" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#0f172a">Legend</text>
+                      
+                      <rect x="0" y="15" width="60" height="30" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="2"/>
+                      <text x="70" y="33" font-family="Inter, sans-serif" font-size="11" fill="#475569">Process Step</text>
+                      
+                      <path d="M 30 60 L 50 75 L 30 90 L 10 75 Z" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+                      <text x="70" y="80" font-family="Inter, sans-serif" font-size="11" fill="#475569">Decision Point</text>
+                      
+                      <rect x="0" y="105" width="60" height="30" rx="6" fill="#d1fae5" stroke="#10b981" stroke-width="2"/>
+                      <text x="70" y="123" font-family="Inter, sans-serif" font-size="11" fill="#475569">Success / Award</text>
+                      
+                      <rect x="0" y="150" width="60" height="30" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+                      <text x="70" y="168" font-family="Inter, sans-serif" font-size="11" fill="#475569">Hold / Rejection</text>
+                      
+                      <g transform="translate(0, 195)">
+                        <path d="M 10 15 L 20 20 L 30 15 L 30 27 L 10 27 Z M 10 15 L 20 11 L 30 15" fill="none" stroke="#f59e0b" stroke-width="1.5"/>
+                        <text x="70" y="23" font-family="Inter, sans-serif" font-size="11" fill="#475569">Email Notification</text>
+                      </g>
+                      
+                      <g transform="translate(0, 235)">
+                        <rect width="35" height="25" rx="3" fill="white" stroke="#1e40af" stroke-width="1.5"/>
+                        <line x1="7" y1="10" x2="28" y2="10" stroke="#1e40af" stroke-width="1"/>
+                        <line x1="7" y1="15" x2="28" y2="15" stroke="#1e40af" stroke-width="1"/>
+                        <text x="70" y="18" font-family="Inter, sans-serif" font-size="11" fill="#475569">Document / Form</text>
+                      </g>
+                    </g>
+                    
+                    <!-- Footer note -->
+                    <text x="700" y="2550" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-style="italic" fill="#94a3b8">Designed in Salesforce | Automated eligibility checks and notifications reduce manual coordination by 40%</text>
+                  </svg>
+                </div>` : ''}
+              </div>
+
+              <div class="case-detail-section">
+                <h2 class="case-detail-heading">Impact</h2>
+                <p class="case-detail-text" style="margin-bottom: 2rem;">The solution delivered measurable improvements across multiple operational dimensions:</p>
+                
+                <div class="impact-grid">
+                  ${content.impacts.map(impact => `
+                    <div class="impact-card">
+                      <div class="impact-value">${impact.value}</div>
+                      <div class="impact-label">${impact.label}</div>
+                    </div>
+                  `).join('')}
+                </div>
+              </div>
+
+              <div style="text-align: center; margin-top: 4rem; padding-top: 3rem; border-top: 2px solid #e2e8f0;">
+                <button class="btn-primary" onclick="navigateTo('contact')">Discuss Your Project</button>
+                <button class="btn-secondary" onclick="navigateTo('case-studies')" style="margin-left: 1rem; color: #1e40af; border-color: #1e40af;">View More Case Studies</button>
+              </div>
+            </div>
+          </section>
+        `;
+      },
+
+      contact: () => `
+        <section class="content-section" style="text-align: center; max-width: 800px;">
+          <h1 class="section-title" style="margin-bottom: 3rem;">Let's Connect</h1>
+          
+          <div style="display: flex; flex-direction: column; gap: 2.5rem; align-items: center; margin-top: 4rem;">
+            <div style="text-align: left; width: 100%; max-width: 500px;">
+              <div style="font-size: 0.875rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: #64748b; margin-bottom: 0.5rem;">Email</div>
+              <a href="mailto:prawachar40@gmail.com" class="contact-link" id="email-link" style="font-size: 1.125rem; display: block;">prawachar40@gmail.com</a>
+            </div>
+            
+            <div style="text-align: left; width: 100%; max-width: 500px;">
+              <div style="font-size: 0.875rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: #64748b; margin-bottom: 0.5rem;">Phone</div>
+              <a href="tel:+17165471068" class="contact-link" style="font-size: 1.125rem; display: block;">716-547-1068</a>
+            </div>
+            
+            <div style="text-align: left; width: 100%; max-width: 500px;">
+              <div style="font-size: 0.875rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: #64748b; margin-bottom: 0.5rem;">LinkedIn</div>
+              <a href="https://linkedin.com/in/piyush-awachar" target="_blank" rel="noopener noreferrer" class="contact-link" id="linkedin-link" style="font-size: 1.125rem; display: block;">linkedin.com/in/piyush-awachar</a>
+            </div>
+          </div>
+        </section>
+      `
+    };
+
+    // Navigation Function
+    function navigateTo(page, param) {
+      currentPage = page;
+      
+      // Update active nav link
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.classList.remove('active');
+        if (link.dataset.page === page) {
+          link.classList.add('active');
+        }
+      });
+
+      // Render page content
+      const mainContent = document.getElementById('main-content');
+      if (page === 'case-study') {
+        mainContent.innerHTML = pages[page](param);
+      } else {
+        mainContent.innerHTML = pages[page]();
+      }
+
+      // Scroll to top
+      window.scrollTo(0, 0);
+    }
+
+    // Add navigation listeners
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        navigateTo(link.dataset.page);
+      });
+    });
+
+    // Element SDK Integration
+    async function onConfigChange(newConfig) {
+      config = { ...config, ...newConfig };
+      
+      // Update text content
+      const heroName = document.getElementById('hero-name');
+      const heroTagline = document.getElementById('hero-tagline');
+      const heroStatement = document.getElementById('hero-statement');
+      const logo = document.getElementById('logo');
+      const emailLink = document.getElementById('email-link');
+      const linkedinLink = document.getElementById('linkedin-link');
+      
+      if (heroName) heroName.textContent = config.consultant_name;
+      if (heroTagline) heroTagline.textContent = config.tagline;
+      if (heroStatement) heroStatement.textContent = config.hero_statement;
+      if (logo) logo.textContent = config.consultant_name.split(' ')[0] + ' ' + config.consultant_name.split(' ')[config.consultant_name.split(' ').length - 1];
+      if (emailLink) {
+        emailLink.textContent = config.email_address;
+        emailLink.href = `mailto:${config.email_address}`;
+      }
+      if (linkedinLink) {
+        linkedinLink.href = config.linkedin_url;
+      }
+      
+      // Update colors
+      document.documentElement.style.setProperty('--primary-color', config.primary_color);
+      document.documentElement.style.setProperty('--secondary-color', config.secondary_color);
+      document.documentElement.style.setProperty('--text-color', config.text_color);
+      document.documentElement.style.setProperty('--background-color', config.background_color);
+      document.documentElement.style.setProperty('--accent-color', config.accent_color);
+      
+      // Update font
+      const fontStack = `${config.font_family}, -apple-system, BlinkMacSystemFont, sans-serif`;
+      document.body.style.fontFamily = fontStack;
+      
+      // Update font size
+      const baseSize = config.font_size;
+      document.documentElement.style.fontSize = `${baseSize}px`;
+    }
+
+    if (window.elementSdk) {
+      window.elementSdk.init({
+        defaultConfig,
+        onConfigChange,
+        mapToCapabilities: (cfg) => ({
+          recolorables: [
+            {
+              get: () => cfg.primary_color || defaultConfig.primary_color,
+              set: (value) => {
+                cfg.primary_color = value;
+                window.elementSdk.setConfig({ primary_color: value });
+              }
+            },
+            {
+              get: () => cfg.secondary_color || defaultConfig.secondary_color,
+              set: (value) => {
+                cfg.secondary_color = value;
+                window.elementSdk.setConfig({ secondary_color: value });
+              }
+            },
+            {
+              get: () => cfg.text_color || defaultConfig.text_color,
+              set: (value) => {
+                cfg.text_color = value;
+                window.elementSdk.setConfig({ text_color: value });
+              }
+            },
+            {
+              get: () => cfg.background_color || defaultConfig.background_color,
+              set: (value) => {
+                cfg.background_color = value;
+                window.elementSdk.setConfig({ background_color: value });
+              }
+            },
+            {
+              get: () => cfg.accent_color || defaultConfig.accent_color,
+              set: (value) => {
+                cfg.accent_color = value;
+                window.elementSdk.setConfig({ accent_color: value });
+              }
+            }
+          ],
+          borderables: [],
+          fontEditable: {
+            get: () => cfg.font_family || defaultConfig.font_family,
+            set: (value) => {
+              cfg.font_family = value;
+              window.elementSdk.setConfig({ font_family: value });
+            }
+          },
+          fontSizeable: {
+            get: () => cfg.font_size || defaultConfig.font_size,
+            set: (value) => {
+              cfg.font_size = value;
+              window.elementSdk.setConfig({ font_size: value });
+            }
+          }
+        }),
+        mapToEditPanelValues: (cfg) => new Map([
+          ['consultant_name', cfg.consultant_name || defaultConfig.consultant_name],
+          ['tagline', cfg.tagline || defaultConfig.tagline],
+          ['hero_statement', cfg.hero_statement || defaultConfig.hero_statement],
+          ['email_address', cfg.email_address || defaultConfig.email_address],
+          ['phone_number', cfg.phone_number || defaultConfig.phone_number],
+          ['linkedin_url', cfg.linkedin_url || defaultConfig.linkedin_url]
+        ])
+      });
+    }
+
+    // Initialize with home page
+    navigateTo('home');
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9aad7256639d477c',t:'MTc2NTIwOTMyMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
+
+can you read this code?
