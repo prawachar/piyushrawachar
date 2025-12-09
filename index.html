@@ -865,7 +865,30 @@
     problem: 'A local entrepreneur needed data to validate whether their chosen business location would support sustainable growth...',
     approach: 'Conducted market segmentation, foot-traffic mapping, competitive analysis, and customer preference research...',
     outcome: 'Delivered a data-driven viability report with recommendations for customer targeting, operating hours, and business positioning.',
-    fullContent: { /* unchanged – omitted for brevity */ }
+    fullContent: { 
+     background: `A first-time entrepreneur in Buffalo was evaluating whether a chosen retail location would support sustainable long-term growth. The client needed objective validation on customer demand, neighborhood spending behavior, and competitive intensity before committing to a multi-year lease and startup investment. The engagement required a structured market analysis to help the client make a confident go/no-go decision.`,
+
+  challenge: `The proposed storefront was in a mixed-use area with inconsistent foot traffic, uncertain target-customer density, and limited publicly available market data. Without a clear understanding of neighborhood demand, competitive presence, and operating feasibility, the entrepreneur risked selecting a location that could not generate sufficient revenue or customer retention.`,
+
+  approachSteps: [
+    `Conducted demographic, income, and lifestyle segmentation within a 1-mile and 3-mile trade area to identify viable customer segments.`,
+    `Mapped foot-traffic density using mobility and geospatial datasets to identify peak demand periods and customer movement patterns.`,
+    `Performed a competitive landscape assessment across direct and substitute businesses, analyzing pricing, positioning, and service mix.`,
+    `Designed and distributed consumer surveys and analyzed social-listening signals to understand purchase drivers and unmet needs.`,
+    `Developed three revenue projection scenarios based on foot traffic, spending power, and conversion likelihood.`,
+    `Evaluated operational considerations including optimal business hours, staffing requirements, and seasonal demand patterns.`,
+    `Synthesized analysis into a decision framework that scored location viability across demand, competition, access, and financial potential.`
+  ],
+
+  solution: `The final deliverable was a complete market viability report containing segment insights, foot-traffic trends, competitive benchmarks, and financial projections. Recommendations outlined the ideal customer segments to target, optimal operating hours, and strategic positioning options. The clarity provided by the analysis allowed the client to move forward confidently with negotiations and business planning.`,
+
+  impacts: [
+    { value: '3x', label: 'Higher expected conversion rate during identified peak hours' },
+    { value: 'Improved', label: 'Confidence in location selection based on objective analysis' },
+    { value: 'Actionable', label: 'Target customer strategy grounded in local demand' },
+    { value: 'Operational', label: 'Guidance for hours, staffing, and service mix' }
+  ]
+}
   },
 
   /* -------------------------- EBDC CASE STUDY (LAST) -------------------------- */
@@ -877,9 +900,30 @@
     problem: 'EBDC relied on fragmented systems—Google Forms, spreadsheets, and shared drives—to manage rental property applications...',
     approach: 'Led discovery workshops, mapped the applicant journey, and designed a unified Salesforce intake workflow...',
     outcome: 'Delivered a structured evaluation workflow that improved pipeline visibility and reduced manual coordination.',
-    fullContent: { /* unchanged – omitted for brevity */ }
-  }
+    fullContent: { background: `East Buffalo Development Corporation (EBDC) administers the Vacant Rental Improvement Program (VRIP), a New York State–funded initiative supporting property owners through rehabilitation grants. The original intake and evaluation process was fragmented across Google Forms, email attachments, spreadsheets, and shared drives. As demand increased, staff lacked a centralized way to track applicants, documents, eligibility, and construction progress.`,
 
+  challenge: `The program team faced duplicated data entries, inconsistent scoring decisions, missing documentation, and limited pipeline visibility. Staff manually stitched together information from multiple systems, slowing down evaluations and creating operational bottlenecks. Leadership lacked a real-time view of application volume, award distribution, or geographic patterns—making it difficult to make timely decisions or report progress to the state.`,
+
+  approachSteps: [
+    `Led discovery workshops with program coordinators, construction leads, and leadership to document the full intake-to-award lifecycle and identify pain points.`,
+    `Mapped the applicant journey from initial inquiry to award disbursement, highlighting failure points tied to documents, eligibility checks, and communication gaps.`,
+    `Designed a Salesforce data model with custom objects for applications, properties, evaluation criteria, document checklists, and reviewer scoring.`,
+    `Developed a structured intake workflow accommodating both full applications and waitlist-style prescreening pathways.`,
+    `Built a multi-stage scoring rubric to standardize evaluator decision-making across property condition, tax status, violations, and applicant readiness.`,
+    `Configured automated reminders, task assignments, and pending-document alerts to eliminate manual follow-up and reduce processing delays.`,
+    `Created dashboards for leadership showing pipeline health, property distribution, award trends, and bottleneck metrics.`
+  ],
+
+  solution: `The resulting Salesforce solution transformed VRIP from a manual, spreadsheet-driven process into a unified intake and evaluation platform. Applications, properties, documents, and scoring criteria now lived in a single system with automated workflows, standardized evaluations, and real-time reporting. Staff could quickly identify incomplete submissions, track scoring progress, and communicate decisions with far greater efficiency.`,
+
+  impacts: [
+    { value: '40%', label: 'Reduction in application processing time' },
+    { value: 'Unified', label: 'Single system of record for VRIP applicant and property data' },
+    { value: 'Consistent', label: 'Standardized scoring across evaluators' },
+    { value: 'Improved', label: 'Pipeline visibility for program leadership' }
+  ]
+ }
+  }
 ];
 
 
@@ -1394,6 +1438,7 @@
   </script>
  </body>
 </html>
+
 
 
 
